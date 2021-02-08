@@ -25,4 +25,9 @@ class EmojiMemoryGame: ObservableObject {
 //        objectWillChange.send()
         model.choose(card: card)
     }
+    
+    func resetGame() {
+        // 이 기능이 뭔지 파악하기
+        model = EmojiMemoryGame.createMemoryGame()
+    }
 }
